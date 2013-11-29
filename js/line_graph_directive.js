@@ -8,12 +8,12 @@
         data: "="
       },
       link: function(scope, element, attrs) {
-        var bisectDate, color, height, line, margin, metric, metrics, parseDate, svg, tooltip, width, x, y, yValue;
+        var bisectDate, color, height, line, margin, metric, metrics, parseDate, svg, tooltip, width, x, xAxis, y, yAxis, yValue;
         margin = {
-          top: 2,
-          right: 2,
-          bottom: 2,
-          left: 0
+          top: 30,
+          right: 30,
+          bottom: 30,
+          left: 30
         };
         width = (parseInt(attrs.width) || 960) - margin.left - margin.right;
         height = (parseInt(attrs.height) || 500) - margin.top - margin.bottom;
@@ -37,6 +37,8 @@
         };
         x = d3.time.scale().range([0, width]);
         y = d3.scale.linear().range([height, 0]);
+        xAxis = d3.svg.axis().scale(x).orient("bottom");
+        yAxis = d3.svg.axis().scale(y).orient("left");
         color = d3.scale.category10();
         line = d3.svg.line().interpolate("basis").x(function(d) {
           return x(d.date);
@@ -72,6 +74,8 @@
             });
           })
         ]);
+        svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")").call(xAxis);
+        svg.append("g").attr("class", "y axis").call(yAxis);
         tooltip = d3.select("body").append("span").attr("class", "graph-tooltip").style("opacity", 0);
         metric = svg.selectAll(".metric").data(metrics).enter().append("g").attr("class", "metric");
         return metric.append("path").attr("d", function(d) {

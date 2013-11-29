@@ -4,7 +4,7 @@ angular.module("App").directive "d3LineGraph", ->
     data: "="
 
   link: (scope, element, attrs) ->
-    margin = {top: 2, right: 2, bottom: 2, left: 0}
+    margin = {top: 30, right: 30, bottom: 30, left: 30}
     width = (parseInt(attrs.width) || 960) - margin.left - margin.right
     height = (parseInt(attrs.height) || 500) - margin.top - margin.bottom
 
@@ -20,6 +20,10 @@ angular.module("App").directive "d3LineGraph", ->
 
     x = d3.time.scale().range([0, width])
     y = d3.scale.linear().range([height, 0])
+
+    xAxis = d3.svg.axis().scale(x).orient("bottom")
+    yAxis = d3.svg.axis().scale(y).orient("left")
+
     color = d3.scale.category10()
 
     line = d3.svg.line().interpolate("basis")
@@ -49,6 +53,15 @@ angular.module("App").directive "d3LineGraph", ->
     ), d3.max(metrics, (c) ->
       d3.max c.values, (v) -> v.metricValue
     )]
+
+    svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+
+    svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
 
     tooltip = d3.select("body").append("span").attr("class", "graph-tooltip").style("opacity", 0)
 

@@ -10,22 +10,32 @@
   <script type="text/javascript" src="js/bullet.js"></script>
   <script type="text/javascript" src="js/bullet_graph_directive.js"></script>
   <link rel="stylesheet" type="text/css" href="css/graph.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
 </head>
 
 <body>
   <div ng-app='App' ng-controller='DemoController'>
+
+  <div class="graph">
     <h3>Multiline Graph</h3>
     <p>{{multilineGraphData}}</p>
-    <d3_line_graph width="200" height="50" data="multilineGraphData"></d3_line_graph>
+    <d3_line_graph width="500" height="300" data="multilineGraphData"></d3_line_graph>
+  </div>
+    <div class="graph">
     <h3>Line Graph</h3>
     <p>{{lineGraphData}}</p>
-    <d3_line_graph width="200" height="50" data="lineGraphData"></d3_line_graph>
+    <d3_line_graph width="500" height="200" data="lineGraphData"></d3_line_graph>
+  </div>
+    <div class="graph">
     <h3>Bullet Graph</h3>
     <p>{{bulletGraphData}}</p>
     <d3_bullet_graph width="300" height="40" data="bulletGraphData"></d3_bullet_graph>
+  </div>
+    <div class="graph">
     <h3>Bar Graph</h3>
     <p>{{barGraphData}}</p>
-    <d3_bar_graph width="160" height="50" data="barGraphData"></d3_bar_graph>
+    <d3_bar_graph width="300" height="200" data="barGraphData"></d3_bar_graph>
+  </div>
   </div>
 </body>
 </html>
