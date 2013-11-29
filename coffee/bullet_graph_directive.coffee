@@ -4,7 +4,7 @@ angular.module("App").directive "d3BulletGraph", ->
     data: "="
 
   link: (scope, element, attrs) ->
-    margin = {top: 2, right: 10, bottom: 20, left: 5}
+    margin = {top: 20, right: 20, bottom: 20, left: 20}
 
     width = (parseInt(attrs.width) || 960) - margin.left - margin.right
     height = (parseInt(attrs.height) || 500)

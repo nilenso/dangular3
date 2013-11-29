@@ -10,10 +10,10 @@
       link: function(scope, element, attrs) {
         var height, margin, svg, width, x, y;
         margin = {
-          top: 2,
-          right: 2,
-          bottom: 2,
-          left: 2
+          top: 20,
+          right: 20,
+          bottom: 20,
+          left: 20
         };
         width = (parseInt(attrs.width) || 960) - margin.left - margin.right;
         height = (parseInt(attrs.height) || 500) - margin.top - margin.bottom;

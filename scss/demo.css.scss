@@ -1,7 +1,7 @@
 .graph {
   display: inline-block;
   width: 600px;
-  min-height: 500px;
+  min-height: 400px;
   vertical-align: top;
   margin: 0 10px 60px;
   border: 1px solid #aaa;
@@ -11,5 +11,9 @@
     margin: 0;
     padding: 10px;
     background-color: #aaa;
+  }
+
+  p {
+    font-size: 15px;
   }
 }

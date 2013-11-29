@@ -10,10 +10,10 @@
       link: function(scope, element, attrs) {
         var chart, height, margin, svg, width;
         margin = {
-          top: 2,
-          right: 10,
+          top: 20,
+          right: 20,
           bottom: 20,
-          left: 5
+          left: 20
         };
         width = (parseInt(attrs.width) || 960) - margin.left - margin.right;
         height = parseInt(attrs.height) || 500;
