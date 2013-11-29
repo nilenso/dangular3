@@ -1,0 +1,84 @@
+.bar {
+  fill: goldenrod; }
+  .bar.negative {
+    fill: brown; }
+  .bar.positive {
+    fill: goldenrod; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges; }
+
+.x.axis path {
+  display: none; }
+
+.line {
+  fill: none;
+  stroke: goldenrod;
+  stroke-width: 2.3px; }
+  .line.clicks {
+    stroke: crimson; }
+  .line.impressions {
+    stroke: goldenrod; }
+
+.bullet {
+  font: 10px sans-serif; }
+
+.bullet .marker {
+  stroke: #000;
+  stroke-width: 2px; }
+
+.bullet .tick line {
+  stroke: #666;
+  stroke-width: .5px; }
+
+.bullet .range.s0 {
+  fill: #eee; }
+
+.bullet .range.s1 {
+  fill: #ddd; }
+
+.bullet .range.s2 {
+  fill: #ccc; }
+
+.bullet .measure.s0 {
+  fill: gold; }
+
+.bullet .measure.s1 {
+  fill: goldenrod; }
+
+.bullet .title {
+  font-size: 14px;
+  font-weight: bold; }
+
+.bullet .subtitle {
+  fill: #999; }
+
+.clicks-legend {
+  font-size: 10px;
+  color: crimson; }
+
+.impressions-legend {
+  font-size: 10px;
+  color: goldenrod; }
+
+.graph-tooltip {
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  padding: 4px;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  pointer-events: none; }
+
+.line1 {
+  stroke: goldenrod; }
+
+.line2 {
+  stroke: crimson; }
+
+.myData {
+  stroke: goldenrod; }

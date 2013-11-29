@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-animate.min.js"></script>
+  <script type="text/javascript" src="js/controller.js"></script>
+  <script type="text/javascript" src="js/bar_graph_directive.js"></script>
+  <script type="text/javascript" src="js/line_graph_directive.js"></script>
+  <script type="text/javascript" src="js/bullet.js"></script>
+  <script type="text/javascript" src="js/bullet_graph_directive.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/graph.css" />
+</head>
+
+<body>
+  <div ng-app='App' ng-controller='DemoController'>
+    <h3>Multiline Graph</h3>
+    <p>{{multilineGraphData}}</p>
+    <d3_line_graph width="200" height="50" data="multilineGraphData"></d3_line_graph>
+    <h3>Line Graph</h3>
+    <p>{{lineGraphData}}</p>
+    <d3_line_graph width="200" height="50" data="lineGraphData"></d3_line_graph>
+    <h3>Bullet Graph</h3>
+    <p>{{bulletGraphData}}</p>
+    <d3_bullet_graph width="300" height="40" data="bulletGraphData"></d3_bullet_graph>
+    <h3>Bar Graph</h3>
+    <p>{{barGraphData}}</p>
+    <d3_bar_graph width="160" height="50" data="barGraphData"></d3_bar_graph>
+  </div>
+</body>
+</html>
