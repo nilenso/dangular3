@@ -1,3 +1,6 @@
+h2 {
+  display: inline-block; }
+
 .graph {
   display: inline-block;
   width: 600px;
