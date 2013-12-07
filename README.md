@@ -24,17 +24,20 @@ OR in `application.scss`
 ## Usage
 
 ###Multiline Graph
-    multilineGraphDa = [{date: "2012-04-19", line1: 587.44, line2: 527.44}, {date: "2012-04-20", line1: 572.98, line2: 522.98}]
+    multilineGraphData = [{date: "2012-04-19", line1: 587.44, line2: 527.44}, {date: "2012-04-20", line1: 572.98, line2: 522.98}]
     <d3_line_graph width="500" height="300" data="multilineGraphData"></d3_line_graph>
 
 ###Line Graph
-    lineGraphDa = [{date: "2012-04-19", myData: 87.44}, {date: "2012-04-20", myData: 72.98}]
+    lineGraphData = [{date: "2012-04-19", myData: 87.44}, {date: "2012-04-20", myData: 72.98}]
     <d3_line_graph width="500" height="200" data="lineGraphData"></d3_line_graph>
 
 ###Bullet Graph
     bulletGraphData = [{"ranges":[30, 70, 100],"measures":[40, 80],"markers":[90]}]
     <d3_bullet_graph width="300" height="40" data="bulletGraphData"></d3_bullet_graph>
 
+###Bar Graph
+    barGraphData = [{date: "2012-04-19", value: 10}, {date: "2012-04-20", value: 8}]
+    <d3_bar_graph width="300" height="200" data="barGraphData"></d3_bar_graph>
 
 ## Contributing
 
