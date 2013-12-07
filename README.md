@@ -1,6 +1,6 @@
 # Dangular3
 
-Angular directives for d3
+Angular directives for d3. [Demo](http://nilenso.github.io/dangular3).
 
 ## Installation
 
