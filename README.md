@@ -4,7 +4,7 @@ Angular directives for d3. [Demo](http://nilenso.github.io/dangular3).
 
 ## Installation
 
-Consider using the asset pipeline gem – [dangular3-rails](https://github.com/nilenso/dangular3-rails) if you want out of the box graphs.
+Consider using the asset pipeline gem – [dangular3-rails](https://github.com/nilenso/dangular3-rails) if you want out of the box graphs in your rails app.
 
 Download the coffee/js file and add them in `application.js` after requiring `angular.js` and `d3.js`
 
