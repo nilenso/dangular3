@@ -15,11 +15,11 @@ Download the coffee/js file and add them in `application.js` after requiring `an
 
 Download the scss/css files and add them in `application.css`
 
-    *= graphs
+    *= graph
 
 OR in `application.scss`
 
-    @import "graphs";
+    @import "graph";
 
 ## Usage
 
