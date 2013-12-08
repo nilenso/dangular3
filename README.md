@@ -38,6 +38,7 @@ OR in `application.scss`
 ###Bar Graph
     barGraphData = [{date: "2012-04-19", value: 10}, {date: "2012-04-20", value: 8}]
     <d3_bar_graph width="300" height="200" data="barGraphData"></d3_bar_graph>
+    <d3_bar_graph width="300" height="200" data="barGraphData" direction="horizontal"></d3_bar_graph>
 
 ## Contributing
 
