@@ -24,15 +24,15 @@ angular.module('App').controller 'DemoController', ($scope) ->
                         ]
 
   $scope.barGraphData = [
-                          {date: "2012-04-19", value: 10}
-                          {date: "2012-04-20", value: 8},
-                          {date: "2012-04-23", value: 2},
-                          {date: "2012-04-24", value: 1},
-                          {date: "2012-04-25", value: -2},
-                          {date: "2012-04-26", value: 1},
-                          {date: "2012-04-27", value: -4},
-                          {date: "2012-04-30", value: 1},
-                          {date: "2012-05-01", value: 4},
+                          {key: "2012-04-19", value: 10}
+                          {key: "2012-04-20", value: 8},
+                          {key: "2012-04-23", value: 2},
+                          {key: "2012-04-24", value: 1},
+                          {key: "2012-04-25", value: -2},
+                          {key: "2012-04-26", value: 1},
+                          {key: "2012-04-27", value: -4},
+                          {key: "2012-04-30", value: 1},
+                          {key: "2012-05-01", value: 4},
                         ]
 
   $scope.bulletGraphData = [{"ranges":[30, 70, 100],"measures":[40, 80],"markers":[90]}]
